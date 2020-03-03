@@ -71,16 +71,16 @@ const matchers = [
 
 (async () => {
     const paths = await globby([
-        './dist/server/views/**/*.ejs',
+        './build/server/views/**/*.ejs',
 
-        './dist/public/js/components/*.js',
-        './dist/app.bundle.js',
+        './build/public/js/components/*.js',
+        './build/app.bundle.js',
 
-        './dist/public/css/*.css',
-        './dist/app.css'
+        './build/public/css/*.css',
+        './build/app.css'
     ]);
 
-    const asset = 'dist/public';
+    const asset = 'build/public';
     const assetAbsolute = path.resolve(asset);
 
     paths.forEach(function (file) {

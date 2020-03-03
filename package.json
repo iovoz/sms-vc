@@ -5,14 +5,14 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon --inspect=0.0.0.0:9228 dist/app.bundle.js",
+        "dev": "nodemon --inspect=0.0.0.0:9228 build/app.bundle.js",
         "watch": "NODE_ENV=development webpack --config webpack.dev.js --watch",
         "versioning": "node webpack.versioning.js",
         "cdn": "node webpack.upload-files-to-cdn.js",
         "build": "NODE_ENV=production webpack --config webpack.prod.js --progress --display-error-details",
         "predeploy": "yarn build",
         "deploy": "gh-pages -d build",
-        "serve": "NODE_ENV=production nodemon dist/app.bundle.js",
+        "serve": "NODE_ENV=production nodemon build/app.bundle.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint client/js .js"
     },

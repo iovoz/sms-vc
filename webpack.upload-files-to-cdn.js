@@ -8,7 +8,7 @@ cloudinary.config({
     api_secret: config.cloudinary.api_secret
 });
 
-recursive("dist", ['*.ejs',
+recursive("build", ['*.ejs',
     '.DS_Store',
     'server',
     'locales',
@@ -24,7 +24,7 @@ recursive("dist", ['*.ejs',
             use_filename: true,
             resource_type: 'raw',
             overwrite: true,
-            public_id: files[index].replace('dist/', ''),
+            public_id: files[index].replace('build/', ''),
             invalidate: true
         }, function (error, result) {
             if (error) {

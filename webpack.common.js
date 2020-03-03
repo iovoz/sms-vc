@@ -12,7 +12,7 @@ const clientConfig = {
         'public/js/components/smsvc-bundle.js': './client/js/containers/SMSVC-client.js'
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['build']),
 
         new CopyWebpackPlugin([
             {
@@ -34,7 +34,7 @@ const clientConfig = {
     ],
 
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         filename: '[name]'
     },
 
@@ -150,11 +150,11 @@ const serverConfig = {
         'temp/styles': './server/sass/sassLoader.js',
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         filename: '[name].bundle.js'
     },
     plugins: [
-        // new CleanWebpackPlugin(['dist']),  // done by clientConfig already
+        // new CleanWebpackPlugin(['build']),  // done by clientConfig already
         new ExtractTextPlugin({
             filename: 'public/css/[name].css',
         }),
