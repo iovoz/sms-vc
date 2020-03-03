@@ -1,0 +1,32 @@
+@import 'include/variable';
+#error-section{
+
+  min-height: 92%;
+
+  h1{
+    font-size: 6em;
+    color: $main-color;
+
+    @media screen and (max-width: $mobile-v) {
+      font-size: 4em;
+    }
+  }
+
+  h3{
+    font-size: 2em;
+    color: $main-color;
+
+    @media screen and (max-width: $mobile-v) {
+      font-size: 1.5em;
+    }
+  }
+
+  p{
+    font-size: 1.5em;
+    text-align: center;
+
+    @media screen and (max-width: $mobile-v) {
+      font-size: 1em;
+    }
+  }
+}

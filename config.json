@@ -1,0 +1,24 @@
+{
+    "clientPath": "/public",
+    "sms-vc": {
+        "webUrl": "https://localhost:3001"
+    },
+    "api": {
+        "defaultApiUrl": "http://127.0.0.1:8091",
+        "username": "user",
+        "password": "pass"
+    },
+    "log": {
+        "level": "debug",
+        "info_filepath": "logs/ff-info.log",
+        "error_filepath": "logs/ff-error.log"
+    },
+    "cloudinary": {
+        "imageUrlPrefix": "https://res.cloudinary.com/sms-vc/image/upload/q_auto,f_auto",
+        "cloud_name": "sms-vc",
+        "api_key": "smsvc9999999999999",
+        "api_secret": "smsvc888888888888",
+        "assetUrlPrefix": "https://res.cloudinary.com/sms-vc/raw/upload/q_auto,f_auto",
+        "assetFolder": "sms-vc/assets"
+    }
+}

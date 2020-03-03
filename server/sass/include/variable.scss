@@ -1,0 +1,85 @@
+$main-color: #007BE4;
+$second-color: rgba(123, 229, 153, 0.1);
+$border-green-color: #7BE599;
+$main-green-color: #54D3AD;
+$main-font: "Gotham", sans-serif;
+$second-font: "Noto Sans TC", sans-serif;
+$main-fontsize: 14px;
+$main-font-color: #163A4D;
+$dark-grey: #333333;
+$mid-grey: #757F8C;
+$light-grey: #999;
+$xs-light-grey: #D6D9E4;
+$bg-grey: #f4f4f4;
+$border-grey: #ddd;
+$disable-grey: #eee;
+$white: #fff;
+$black: #000;
+$mid-black: #171D33;
+$light-black: #3B414B;
+$green: #3c763d;
+$error-red: #ff0000;
+$success-green: #17bb17;
+
+$shadow : rgba(0, 0, 0, 0.12) 0 2px 6px;
+$text-shadow: rgba(0, 0, 0, 0.5) 0.05em 0.05em 0.1em;
+$text-shadow2: rgba(0, 0, 0, 0.2) 0.05em 0.05em 0.1em;
+$noshadow : rgba(0, 0, 0, 0) 0.05em 0.05em 0.1em
+rgba(0, 0, 0, 0.24) 0 1px 2px;
+
+$padding: 15px;
+
+$fadeIn: all 0.4s ease-out;
+$fadeIn2: all 1s ease-in;
+$fadeIn3: all 0.1s ease-in;
+
+$lv0: -1;
+$lv1: 0;
+$lv2: 99;
+$lv3: 999;
+$lv4: 9999;
+$lv5: 99999;
+$lv6: 999999;
+
+/*Font*/
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham-Light.otf");
+}
+
+@mixin setFontSize($size) {
+    font-size: $size * 1px;
+    font-size: $size * 1rem;
+}
+
+@mixin set-font($size) {
+    font-size: #{($size*1)}px;
+    font-size: #{($size*1)}rem;
+}
+
+//Media Query
+$highRes: 1920px;
+/*1920px - 1440px*/
+
+$desktop: 1440px;
+/*1440px - 1024px*/
+
+$desktop-s: 1199px;
+
+$tablet-h: 1025px;
+/* 1023px - 992px*/
+
+$tablet-v: 991px;
+/* 991px - 768px */
+
+$mobile-h-iphoneX: 812px;
+$mobile-iphone-ratio: 3;
+
+$mobile-h: 767px;
+/* 767px - 481px */
+
+$mobile-v: 480px;
+/* 480px - 320px */
+
+$mobile-xs: 320px;
+/* 320px */

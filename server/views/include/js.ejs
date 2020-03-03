@@ -1,0 +1,7 @@
+<% if (typeof appData !== "undefined") { %>
+<script>
+    window.__DATA__ = <%- appData %>;
+    window.__PRELOADED_STATE__ = <%- preloadedState %>;
+</script>
+<script src="/js/components/vendor-bundle.js"></script>
+<% } %>
