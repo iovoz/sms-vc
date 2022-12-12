@@ -22,7 +22,7 @@
         "axios": "^0.19.2",
         "cookie-parser": "^1.4.3",
         "ejs": "^2.5.7",
-        "express": "^4.16.2",
+        "express": "^4.17.3",
         "express-async-errors": "^2.1.2",
         "express-session": "^1.16.2",
         "express-useragent": "^1.0.12",
